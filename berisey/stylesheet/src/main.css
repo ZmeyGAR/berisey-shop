@@ -2,6 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+::-webkit-scrollbar {
+    @apply w-2;
+}
+::-webkit-scrollbar-track {
+    @apply bg-gray-50;
+}
+::-webkit-scrollbar-thumb {
+    @apply bg-gray-200 rounded-md;
+}
+::-webkit-scrollbar-thumb:hover {
+    @apply bg-gray-300
+}
+.truncate{
+    @apply overflow-hidden text-ellipsis whitespace-nowrap
+}
 div[drawer-backdrop] {
     @apply bg-transparent
 }
