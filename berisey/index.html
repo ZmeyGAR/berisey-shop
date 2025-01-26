@@ -5,6 +5,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>БЕРИСЕЙ 👨🏽‍🌾 Всё для хорошего урожая</title>
+  <!-- для гитхаба -->
+  <base href="./" target="_self">
+  <script>
+    if (window.location.origin === 'https://zmeygar.github.io') {
+        document.head.querySelector('base').href = 'https://zmeygar.github.io/berisey-shop/';
+    }
+  </script>
+
 
   <!-- fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,8 +34,10 @@
 
   <!-- scripts -->
   <script src="./js/swiper.min.js"></script>
-  <script src="./js/gsap.3.3.4.min.js"></script>
   <!-- scripts -->
+
+
+
 </head>
 
 <body class="min-w-full w-full min-h-screen h-auto">
