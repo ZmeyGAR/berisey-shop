@@ -20,3 +20,15 @@
 div[drawer-backdrop] {
     @apply bg-transparent
 }
+.scroll-dir-rtl{
+    direction: rtl;
+}
+.scroll-dir-rtl *{
+    direction: ltr;
+}
+.main-bg-radial{
+    background: radial-gradient(#fdfcfc, #e2e7ea, #fff);
+}
+.main-bg-linear{
+    background: linear-gradient(220deg, #fff, #fff, #E2E7EA, #fff, #fff);
+}
