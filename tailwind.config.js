@@ -15,6 +15,10 @@ module.exports = {
       borderRadius: {
         'large' : '48px'
       },
+      fontSize: {
+        '8px' : '8px',
+        '10px' : '10px',
+      },
       screens: {
         'sm-mobile': '360px',
         'xl-mobile': '480px',

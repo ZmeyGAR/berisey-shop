@@ -2,6 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+:root{
+    --header-nav-height: 149px;
+    --main-banner-height: 600px;
+}
+@media screen and (min-width: 480px){
+    :root{
+        --header-nav-height: 154px;
+        --main-banner-height: 50vw;
+    }
+}
+@media screen and (min-width: 768px) {
+    :root{
+        --header-nav-height: 179px;
+        --main-banner-height: 24rem;
+    }
+}
+
 ::-webkit-scrollbar {
     @apply w-2;
 }
@@ -30,5 +47,30 @@ div[drawer-backdrop] {
     background: radial-gradient(#fdfcfc, #e2e7ea, #fff);
 }
 .main-bg-linear{
-    background: linear-gradient(220deg, #fff, #fff, #E2E7EA, #fff, #fff);
+    background: linear-gradient(140deg, #fff, #e2e7ea, #fff) fixed;
+}
+.footer-bg{
+    background: linear-gradient(130deg, #fff, #05d975) fixed;
+}
+
+.has-section-divided section:first-child,
+.has-section-divided section:nth-child(odd)
+{
+    @apply bg-gradient-to-b from-white to-transparent rounded-large rounded-b-none;
+}
+
+.has-section-divided section:last-child,
+.has-section-divided section:nth-child(even)
+{
+    @apply bg-gradient-to-t from-white to-transparent rounded-large rounded-t-none;
+}
+
+.has-section-divided section:first-child:last-child,
+.has-section-divided section:nth-child(odd):last-child
+{
+    @apply bg-gradient-to-b from-white via-transparent to-white rounded-large;
+}
+
+*[data-after-simbol]{
+    @apply after:content-[attr(data-after-simbol)] after:ml-1
 }
