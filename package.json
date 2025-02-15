@@ -4,8 +4,8 @@
     "tailwindcss": "^3.4.17"
   },
   "scripts": {
-    "dev": "npx tailwindcss -i ./stylesheet/src/main.css -o ./stylesheet/stylesheet.css --watch",
-    "build": "npx tailwindcss -i ./stylesheet/src/main.css -o ./stylesheet/stylesheet.css --minify"
+    "dev": "npx tailwindcss -i ./berisey/stylesheet/src/main.css -o ./berisey/stylesheet/stylesheet.css --watch",
+    "build": "npx tailwindcss -i ./berisey/stylesheet/src/main.css -o ./berisey/stylesheet/stylesheet.css --minify"
   },
   "dependencies": {
     "flowbite": "^2.5.2"

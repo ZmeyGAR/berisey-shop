@@ -3,7 +3,7 @@ const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
   content: [
-    "./**/*.{html,js}",
+    "./berisey/**/*.{html,js}",
     "./node_modules/flowbite/**/*.js"
   ],
   theme: {
@@ -35,7 +35,9 @@ module.exports = {
         lightGray: '#9294A1',
         lightBlue: '#F6F7F8',
         lightGreen: '#05D975',
+        disabledGray: "#EFF1F3",
         darkGreen: '#04A65B',
+        textGray: '#9294A1'
       }
     },
   },

@@ -3,21 +3,46 @@
 @tailwind utilities;
 
 :root{
-    --header-nav-height: 149px;
-    --main-banner-height: 600px;
+    --header-nav-height: 116px;
+    --main-banner-height: 0px;
 }
+body:has(section#main-banner){
+    --main-banner-height: 460px;
+}
+
 @media screen and (min-width: 480px){
     :root{
-        --header-nav-height: 154px;
+        --header-nav-height: 128px;
+    }
+    body:has(section#main-banner){
         --main-banner-height: 50vw;
     }
 }
 @media screen and (min-width: 768px) {
     :root{
         --header-nav-height: 179px;
-        --main-banner-height: 24rem;
+    }
+    body:has(section#main-banner){
+        --main-banner-height: 460px;
     }
 }
+
+.image-reflect{
+    -webkit-box-reflect: below -90% radial-gradient(rgba(115,115,115,0.5), transparent)
+}
+
+
+picture.object-contain img
+{
+    object-fit: contain;
+}
+picture.object-cover img
+{
+    object-fit: cover;
+}
+
+
+
 
 ::-webkit-scrollbar {
     @apply w-2;
@@ -53,6 +78,9 @@ div[drawer-backdrop] {
     background: linear-gradient(130deg, #fff, #05d975) fixed;
 }
 
+.has-section-divided{
+    @apply gap-36 pt-11 *:-my-11;
+}
 .has-section-divided section:first-child,
 .has-section-divided section:nth-child(odd)
 {
