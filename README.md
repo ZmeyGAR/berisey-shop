@@ -1,3 +1,4 @@
 # БЕРИСЕЙ 👨🏽‍🌾 Всё для хорошего урожая
 
-[просмотр](https://zmeygar.github.io/berisey-shop/berisey/)
+[просмотр]Главная (https://zmeygar.github.io/berisey-shop/berisey/)
+[просмотр]Каталог (https://zmeygar.github.io/berisey-shop/berisey/catalog)
