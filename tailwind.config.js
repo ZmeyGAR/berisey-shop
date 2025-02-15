@@ -3,7 +3,7 @@ const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
   content: [
-    "./**/*.{html,js}",
+    "./berisey/**/*.{html,js}",
     "./node_modules/flowbite/**/*.js"
   ],
   theme: {
