@@ -102,3 +102,14 @@ div[drawer-backdrop] {
 *[data-after-simbol]{
     @apply after:content-[attr(data-after-simbol)] after:ml-1
 }
+.breadcrumb-list ol li:not(:first-child):not(:last-child):not(:nth-last-child(2)) span.breadcrump-text{
+    @apply truncate max-w-4;
+}
+.breadcrumb-list ol li:not(:first-child):not(:last-child):not(:nth-last-child(2)) span.breadcrump-text::before{
+    content: '.';
+    display: inline;
+}
+
+.nested-category-list li ul{
+    @apply pl-3
+}
