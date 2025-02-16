@@ -30,7 +30,9 @@ body:has(section#main-banner){
 .image-reflect{
     -webkit-box-reflect: below -90% radial-gradient(rgba(115,115,115,0.5), transparent)
 }
-
+main > .main-container{
+    @apply relative z-20
+}
 
 picture.object-contain img
 {
