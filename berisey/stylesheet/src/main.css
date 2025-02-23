@@ -115,3 +115,14 @@ div[drawer-backdrop] {
 .nested-category-list li ul{
     @apply pl-3
 }
+
+.btn-animate-ping{
+    animation: btn-ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+}	
+
+@keyframes btn-ping {
+  75%, 100% {
+    transform: scale(1.1);
+    opacity: 0;
+  }
+}
